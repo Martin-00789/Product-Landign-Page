@@ -1,0 +1,223 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+	font-family: 'Lato', sans-serif;
+	background-color: #eee;
+} 
+
+#page-wrapper{
+	position: relative;
+}
+
+#header{
+	position: fixed;
+	top:0;
+	min-height: 85px;
+	width: 100%;
+	padding: 0 20px;
+	display: flex;
+	justify-content: space-around;
+	background-color: #eee;
+}
+
+/* Estilos logo */
+.Logo{
+  width: 45vw;
+	position: fixed;
+	top: 20px;
+	left: 20px;
+}
+
+#header-img {
+	width: 40vw;
+	height: 63px;
+	border-radius: 5px;
+}
+
+/* Estilos Barra de Navegacion */
+
+nav > ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	list-style: none;
+	width: 100%;
+}
+
+#nav-bar {
+		margin: 20px;
+		padding: 20px;
+		width: 45vw;
+		position: fixed;
+		left: 50vw;
+}
+
+.nav-link {
+	width: 20px;
+	height: 23px;	
+	text-decoration: none;
+}
+
+.nav-link:visited {
+	color:black;
+}
+
+/* Estilos formulario */
+
+#form{
+	margin-top: 30px;
+	height: 150px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	align-content: center;
+}
+
+#form > p {
+	font-size: 30px;
+	margin: 10px;
+}
+
+#email{
+	font-size: 20px;
+	margin: 20px;
+	font-family:'Lato', sans-serif;
+}
+
+#submit{
+	height: 30px;
+	width: 13%;
+	margin-bottom: 20px;
+	font-size: 20px;
+	font-weight: bold;
+	background-color: #f1c40f;
+}
+
+/* Caracteristicas */
+
+#caracteristicas {
+	margin-top: 30px;
+}
+
+
+.flex {
+	display: flex;
+}
+
+.icono {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 125px;
+	width: 20vw;
+	color: darkorange;
+}
+
+.descripcion {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	height: 125px;
+	width: 80vw;
+	padding: 5px;
+}
+
+/* Como funciona */
+
+#como-funciona {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* Precios */
+
+#precios {
+	margin-top: 60px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.producto {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-content: center;
+	text-align: center;
+	width: calc(100% / 3);
+  margin: 10px;
+  border: 1px solid #000;
+  border-radius: 3px;
+}
+
+.producto .nivel {
+	background-color: #ddd;
+  color: black;
+  padding: 15px 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.producto h2 {
+	margin-top: 15px;
+	margin-bottom: 20px;
+}
+
+.producto img {
+	height: 60%;
+	width: 50%;
+}
+
+.producto button {
+	margin-top: 15px;
+	font-size: 20px;
+	height: 9%;
+	width: 32%;
+	background-color: #f1c40f;
+}
+
+/* Pie de Pagina */
+
+footer {
+	margin-top: 30px;
+	padding: 20px;
+}
+
+footer ul {
+	display: flex;
+	justify-content: flex-end;
+}
+
+footer ul li{
+	width: 100px;
+	list-style: none;
+}
+
+footer ul li a{
+	text-decoration: none;
+}
+
+footer ul li a:visited{
+	color: black;
+}
+
+footer span {
+	display: flex;
+	justify-content: flex-end;
+}
+
+
+/* Medias Queries */
+@media screen and (max-width: 500px){
+	body{
+			color: red;
+	}
+}
