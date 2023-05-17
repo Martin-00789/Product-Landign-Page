@@ -9,6 +9,10 @@ body{
 	background-color: #eee;
 } 
 
+a {
+	color: black;
+}
+
 #page-wrapper{
 	position: relative;
 }
@@ -16,11 +20,12 @@ body{
 #header{
 	position: fixed;
 	top:0;
-	min-height: 85px;
+	min-height: 75px;
 	width: 100%;
 	padding: 0 20px;
 	display: flex;
 	justify-content: space-around;
+	align-items: center;
 	background-color: #eee;
 }
 
@@ -28,7 +33,7 @@ body{
 .Logo{
   width: 45vw;
 	position: fixed;
-	top: 20px;
+	top: 10px;
 	left: 20px;
 }
 
@@ -40,20 +45,20 @@ body{
 
 /* Estilos Barra de Navegacion */
 
+#nav-bar {
+	margin: 10px;
+	padding: 10px;
+	width: 45vw;
+	position: fixed;
+	left: 50vw;
+}
+
 nav > ul {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
 	list-style: none;
 	width: 100%;
-}
-
-#nav-bar {
-		margin: 20px;
-		padding: 20px;
-		width: 45vw;
-		position: fixed;
-		left: 50vw;
 }
 
 .nav-link {
@@ -69,7 +74,7 @@ nav > ul {
 /* Estilos formulario */
 
 #form{
-	margin-top: 30px;
+	margin-top: 50px;
 	height: 150px;
 	width: 100%;
 	display: flex;
@@ -79,9 +84,11 @@ nav > ul {
 	align-content: center;
 }
 
-#form > p {
-	font-size: 30px;
-	margin: 10px;
+#form > p {	
+	font-size: 20px;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	word-wrap: break-word;
 }
 
 #email{
